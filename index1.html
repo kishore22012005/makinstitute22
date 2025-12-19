@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAKI Institution | Kids Learning Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { margin: 0; background: linear-gradient(135deg,#fff7e6,#e6f7ff); }
+    header {
+      background: linear-gradient(90deg,#ff6a00,#ff2d95,#6a5cff);
+      color: white; padding: 30px 15px; text-align: center;
+    }
+    header h1 { margin: 0; font-size: 36px; }
+    header p { font-size: 18px; margin-top: 10px; }
+    .btn { background: #ffd400; padding: 12px 25px; border-radius: 30px; color:#000; text-decoration:none; font-weight:600; display:inline-block; margin-top:15px; }
+
+    section { padding: 50px 20px; max-width: 1200px; margin: auto; }
+    .section-title { text-align:center; font-size:30px; color:#ff2d95; margin-bottom:30px; }
+
+    .courses { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+    .card {
+      background:white; border-radius:20px; padding:25px; text-align:center;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+    .card img { width:100%; height:160px; object-fit:cover; border-radius:15px; }
+    .card h3 { color:#6a5cff; }
+
+    .offer {
+      background: linear-gradient(90deg,#ff9a00,#ff2d95);
+      color:white; border-radius:25px; padding:40px; text-align:center;
+    }
+    .offer h2 { font-size:32px; }
+
+    form {
+      background:white; padding:30px; border-radius:25px;
+      box-shadow:0 15px 30px rgba(0,0,0,0.15);
+      max-width:500px; margin:auto;
+    }
+    input, select {
+      width:100%; padding:14px; margin-bottom:15px;
+      border-radius:15px; border:1px solid #ccc;
+    }
+    button {
+      width:100%; padding:14px; border:none;
+      border-radius:20px; font-size:18px; font-weight:700;
+      background: linear-gradient(90deg,#6a5cff,#ff2d95,#ff9a00);
+      color:white; cursor:pointer;
+    }
+    button:hover { transform: scale(1.05); }
+
+    footer {
+      background:#6a5cff; color:white; text-align:center;
+      padding:25px; margin-top:40px;
+    }
+
+    .whatsapp {
+      position:fixed; bottom:20px; right:20px;
+      background:#25D366; color:white;
+      padding:15px 18px; border-radius:50%;
+      font-size:24px; text-decoration:none;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MAKI INSTITUTION</h1>
+  <p>Fun • Learning • Bright Future for Children</p>
+  <a class="btn" href="#enquiry">Free Demo Class Available</a>
+</header>
+
+<section>
+  <h2 class="section-title">Our Courses</h2>
+  <div class="courses">
+    <div class="card"><img src="https://images.unsplash.com/photo-1588072432836-e10032774350"/><h3>Abacus</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1606312619344-9b6d50b4d91f"/><h3>Drawing</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238"/><h3>Phonics</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c"/><h3>Handwriting</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1584697964403-0a5c1c8b4c47"/><h3>Hindi</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1596496181871-9681eacf9764"/><h3>Tuition (All Classes)</h3></div>
+  </div>
+</section>
+
+<section>
+  <div class="offer">
+    <h2>🎉 Special Offer 🎉</h2>
+    <p style="font-size:22px;">25% Discount • Free Demo Class</p>
+  </div>
+</section>
+
+<section id="enquiry">
+  <h2 class="section-title">Enquiry Form</h2>
+  <form action="https://formsubmit.co/kishoremanthiram@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New Admission Enquiry - MAKI Institution">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <input type="text" name="Parent Name" placeholder="Parent Name" required>
+    <input type="tel" name="Phone Number" placeholder="Mobile Number" required>
+    <input type="email" name="Email" placeholder="Email Address" required>
+    <select name="Course Interested" required>
+      <option value="">Select Course</option>
+      <option>Abacus</option>
+      <option>Drawing</option>
+      <option>Phonics</option>
+      <option>Handwriting</option>
+      <option>Hindi</option>
+      <option>Tuition (All Classes)</option>
+    </select>
+    <button type="submit">Submit Enquiry</button>
+  </form>
+</section>
+
+<footer>
+  <p><strong>Address:</strong> Pushpa Nagar (Near Euro Kids), Medavakkam</p>
+  <p><strong>Contact:</strong> 9514455553</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919514455553" target="_blank">💬</a>
+
+</body>
+</html>
